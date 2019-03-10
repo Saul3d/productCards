@@ -1,0 +1,32 @@
+@import './normalize.css';
+
+body{
+    font-family: 'Lato';
+}
+body > header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2em;
+    font-weight:700;
+    font-style: italic;
+    color:#76cbce;
+    height: 3.125em;
+    background-color:#f1f1f1;
+}
+article{
+    width:21.875em;
+    display:flex;
+    flex-direction:column;
+    border:1px solid #e1e1e1;
+    border-radius:.0625em;
+    drop-shadow:
+    
+}
+.image-wrapper{
+    width:100%;
+    position:relative;
+}
+.image-wrapper img{
+    width:100%;
+}
