@@ -14,19 +14,65 @@ body > header{
     height: 3.125em;
     background-color:#f1f1f1;
 }
+main{
+    display:flex;
+    justify-content:space-around;
+    flex-flow:wrap;
+    padding:1.75em 2.5em;
+}
 article{
-    width:21.875em;
+    width:30.875em;
     display:flex;
     flex-direction:column;
     border:1px solid #e1e1e1;
-    border-radius:.0625em;
-    drop-shadow:
-    
+    border-radius:.75em;
+    box-shadow:7px 10px 20px #e1e1e1;
+    margin:.625em;
+}
+article header{
+    text-transform: uppercase;
+    font-size:1.75em;
+    padding:.625em;
+    color:#575757;
+}
+.info-wrapper{
+    padding:1.25em;
 }
 .image-wrapper{
+    display:flex;
+    align-items:center;
     width:100%;
-    position:relative;
+    height:20em;
+    overflow:hidden;
 }
 .image-wrapper img{
     width:100%;
+    min-height:100%;
+    background-size:cover;
+}
+.description-section label{
+    color:#575757;
+}
+.description-section p{
+    color:#575757;
+    line-height: 1.25em;
+}
+.specification-section p{
+    display:flex;
+    align-items:center;
+    font-family:"Lato";
+    color:#575757;
+    font-size:1.25em;
+    text-transform:uppercase;
+}
+.specification-section i{
+    font-size:2em;
+    color:#575757;
+    margin:0 .625em;
+}
+.pricing-section{
+    font-family:inherit;
+    display:flex;
+    flex-direction:column;
+    height:100px;
 }
