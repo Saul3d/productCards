@@ -98,6 +98,22 @@ article header{
     color:#575757;
     margin:0 .625em;
 }
+.icon-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-wrapper i:first-child{
+    position:relative;
+    transform: translate(47px, 7px); 
+    /* transform: translateY(15px);  */
+    
+}
+.icon-wrapper i:last-child{
+    position:relative;
+    transform: scaleX(-1);
+    z-index:10;
+}
 .pricing-section{
     font-family:inherit;
     display:flex;
