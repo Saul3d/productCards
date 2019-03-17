@@ -18,12 +18,12 @@ body > header{
 }
 main{
     display:flex;
-    justify-content:space-around;
+    justify-content:flex-start;
     flex-flow:wrap;
     padding:1.75em 2.5em;
 }
 article{
-    width:30.875em;
+    width:27.9375em;
     display:flex;
     flex-direction:column;
     border:1px solid #e1e1e1;
@@ -38,7 +38,7 @@ article header{
     color:#575757;
 }
 .info-wrapper{
-    padding:1.25em;
+    padding:1.25em 1.25em .25em;
 }
 .image-wrapper{
     display:flex;
@@ -60,6 +60,7 @@ article header{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    padding:.625em 0 .350em;
 }
 .fa-map-marked-alt{ 
     font-size: 2em;
@@ -84,6 +85,7 @@ article header{
     display:flex;
     align-items:center;
     justify-content:space-between;
+    margin:1em 0.5em .0625em;
 }
 .specification-section p{
     display:flex;
@@ -95,17 +97,39 @@ article header{
 }
 .specification-section i{
     font-size:2em;
-    color:#575757;
-    margin:0 .625em;
+    color:#808080;
+    margin:.625em;
+}
+.specification-section i.selected{
+    color:#F15A24;
+}
+.reviews-section{
+    display:flex;
+    flex-direction:column;
+}
+.reviews-section p{
+    font-size: 1em;
+    font-weight:300;
+    margin:.45em 0;
+}
+.reviews-section span{
+    margin:0 .25em;
+}
+.star-wrapper i{
+    font-size: 1.45em;
+    margin:0 .0625em;
+    color:#ccc;
 }
 .icon-wrapper{
     display:flex;
     align-items: center;
     justify-content: center;
+    position:relative;
+    top:-.75em;
 }
 .icon-wrapper i:first-child{
     position:relative;
-    transform: translate(47px, 7px); 
+    transform: translate(55px, 0.4375em); 
     /* transform: translateY(15px);  */
     
 }
@@ -117,6 +141,43 @@ article header{
 .pricing-section{
     font-family:inherit;
     display:flex;
-    flex-direction:column;
+    justify-content:space-between;
+    padding:0 1.5em;
+    align-items:center;
     height:100px;
+    color:#808080;
+}
+.price-wrapper p{
+    margin:.0625em;
+}
+.fa-plane{
+    font-size:1.5em;
+    transform:rotate(-45deg);
+}
+.days{
+    font-size:2.125em;
+    font-weight:400;
+}
+.price{
+    font-weight:800;
+    font-size:2.5em;
+}
+footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:1.25em;
+}
+footer button{
+    width:90%;
+    background-color:#F15A24;
+    color:#fff;
+    padding:.85em;
+    border-radius:.45em;
+    font-weight:200;
+    font-size:1.25em;
+    margin:.25em 0;
+    border:none;
+    font-family:"proxima-nova", sans-serif;
+    
 }
