@@ -90,11 +90,10 @@ article{
     border-radius:.75em;
     box-shadow:7px 10px 20px #e1e1e1;
     margin:.625em;
-    transition: transform, transform .5s;
+    transition: transform .5s;
 }
 article:hover{
-    transform: scale(1.0625);
-    transform: rotate(.5deg);
+    transform: scale(1.045);
 }
 article header{
     text-transform: uppercase;
