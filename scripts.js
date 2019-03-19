@@ -1,14 +1,14 @@
 const tours = [
     {
-        name:'Dutch Apple Pie',
-        description: 'Apples, sugar, butter, cinnimon, nutmeg, dutch people',
-        reviews: 5000,
-        price: 'Earl Grey tea',
+        name:'VIETNAM AND ANGKOR WAT',
+        description: `ALorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+        reviews: 4,
+        price: '$2500',
         image: 'https://cms.splendidtable.org/sites/default/files/styles/w2000/public/PA-Dutch-Apple-Pie_by_Keller_Keller-LEDE.jpg?itok=vWBLQ2mL',
         duration: 10,
-        country: 'Zoe' 
+        region: 'Asia' 
     }
-] 
+];
 printToDom (divId, textToPrint) {
     const  selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = textToPrint;
