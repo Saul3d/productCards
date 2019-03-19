@@ -25,6 +25,11 @@ body > header{
     color:#fff;
     height:100%;
 }
+.questions a{
+    text-decoration: none;
+    color:#fff;
+    cursor:pointer;
+}
 .headerNav{
     background-color:#2f2f2f;
     padding:0;
@@ -42,11 +47,33 @@ body > header{
     font-size:1.25em;
     font-weight:100;
     text-align: center;
-    padding:.5em;
+    position:relative
 }
-.headerNav ul li:hover{
+.headerNav ul li a:hover{
     background-color:#f15a24;
     cursor: pointer;
+}
+.headerNav ul li a{
+    color:#fff;
+    text-decoration:none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerNav ul li ul{
+    display:none;
+    flex-direction:column;
+    background-color:#2f2f2f;
+    position:absolute;
+    width:8.125;
+}
+.headerNav ul li:hover > ul{
+    display:block;
+}
+.headerNav ul li ul li{
+    font-size:.75em;
+    width:100%;
 }
 main{
     display:flex;
@@ -63,6 +90,11 @@ article{
     border-radius:.75em;
     box-shadow:7px 10px 20px #e1e1e1;
     margin:.625em;
+    transition: transform, transform .5s;
+}
+article:hover{
+    transform: scale(1.0625);
+    transform: rotate(.5deg);
 }
 article header{
     text-transform: uppercase;
